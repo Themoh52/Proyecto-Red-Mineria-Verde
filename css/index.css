@@ -28,7 +28,7 @@ h3{
     color: black;
 }
 p{
-    margin: 0 0 50px 25px;
+    margin: 0 0 50px 15px;
     font-family: var(--fl);
     font-size: 15px;
     text-align:justify;
@@ -56,7 +56,6 @@ a:hover{
     width: 100vw;
     height: 30vh;
     margin: 0 0 50px 0;
-    padding: 20px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
@@ -76,7 +75,7 @@ a:hover{
     font-size: 15px;
     color: white;
     text-decoration: none;
-    margin: 0 0 50px 25px;
+    margin: 0 0 50px 0;
 }
 .header-nav__logo{
     height: 100px;
@@ -97,22 +96,26 @@ a:hover{
 .index-foto1{
     width: 540px;
     height: 354.375px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 15px;
+    padding: 10px;
 }
 .index-foto2{
     width:300px;
     height: 241.193px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 15px;
+    padding: 10px;
 }
 .index-foto3{
     width: 540px;
     height: 360px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 15px;
+    padding: 10px;
 }
 .index-foto4{
     width: 540px;
     height: 360px;
-    margin-bottom: 25px;
+    margin: 0 0 25px 15px;
+    padding: 10px;
 }
 .index-section__about-us{
     animation: index-section__about-us 1s ease-in-out both;
@@ -195,7 +198,7 @@ a:hover{
     margin: 0 0 50px 25px;
     padding: 20px;
     display: grid;
-    grid-template-rows: repeat(3, 2fr);
+    grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
 }
 .about-us__ol{
@@ -242,7 +245,8 @@ a:hover{
     }
 }
 .practica-main{
-    margin: 0 0 50px 20px;
+    margin: 0 0 50px 0;
+    padding: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
@@ -256,7 +260,8 @@ a:hover{
     color:rgba(9, 193, 55, 0.842);
 }
 .work-main{
-    margin: 0 0 50px 25px;
+    margin: 0 0 50px 0;
+    padding: 20px;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -340,6 +345,7 @@ a:hover{
     }
     .main-index{
         margin: 0 0 50px 0;
+        padding-left: 10px;
         display: flex;
         flex-direction:row;
         flex-wrap:wrap;
@@ -349,21 +355,25 @@ a:hover{
         width: 320px;
         height: 223px;
         margin: 0 0 25px 0;
+        padding: 10px;
     }
     .index-foto2{
         width:300px;
         height: 241.193px;
         margin: 0 0 25px 0;
+        padding: 10px;
     }
     .index-foto3{
         width: 320px;
         height: 226px;
         margin: 0 0 25px 0;
+        padding: 10px;
     }
     .index-foto4{
         width: 320px;
         height: 226px;
         margin: 0 0 25px 0;
+        padding: 10px;
     }
     .footer{
         width: 100vw;
@@ -392,13 +402,13 @@ a:hover{
         animation: index-section__about-us 1s ease-in-out both;
     }
     .index-aside__areas{
-        animation: index-aside__areas 1s ease-in-out both;
+        animation: index-aside__areas 2s ease-in-out both;
     }
     .index-section__practica{
-        animation: index-section__practica 1s ease-in-out both;
+        animation: index-section__practica 3s ease-in-out both;
     }
     .index-section__work{
-        animation: index-section__work 1s ease-in-out both;
+        animation: index-section__work 4s ease-in-out both;
     }
     @keyframes index-section__about-us{
         0%{
