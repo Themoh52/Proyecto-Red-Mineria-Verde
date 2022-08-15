@@ -12,13 +12,15 @@
 h1{
     font-family: var(--fl);
     font-size: 25px;
-    margin: 0 0 50px 25px;
+    margin: 0 0 50px 0;
+    padding-left: 25px;
     color: rgba(9, 193, 55, 0.842);   
 }
 h2{
     font-family: var(--fl);
     font-size: 20px;
-    margin: 0 0 50px 25px;
+    margin: 0 0 50px 0;
+    padding-left: 25px;
     color: blue;
 }
 h3{
@@ -28,7 +30,8 @@ h3{
     color: black;
 }
 p{
-    margin: 0 0 50px 15px;
+    margin: 0 0 50px 0;
+    padding-left: 25px;
     font-family: var(--fl);
     font-size: 15px;
     text-align:justify;
@@ -39,11 +42,13 @@ a{
     font-size: 15px;
     color: rgb(1, 202, 247);
     text-decoration: none;
-    margin: 0 0 25px 0;
+    margin: 0 0 25px 25px;
+    padding-left: 5px;
     transition: ease-in-out .5s;
 }
 a:hover{
     padding: 5px;
+    margin: 0 0 25px;
     background-color: black;
     color: white;
 }
@@ -80,7 +85,7 @@ a:hover{
 .header-nav__logo{
     height: 100px;
     width: 100px;
-    margin: 0 0 0 25px;
+    margin: 0;
 }
 .header-nav__logo__a{
     padding: 5px;
@@ -96,26 +101,26 @@ a:hover{
 .index-foto1{
     width: 540px;
     height: 354.375px;
-    margin: 0 0 25px 15px;
-    padding: 10px;
+    margin: 0 0 25px 0;
+    padding-left: 10px;
 }
 .index-foto2{
     width:300px;
     height: 241.193px;
-    margin: 0 0 25px 15px;
-    padding: 10px;
+    margin: 0 0 25px 25px;
+    padding-left: 10px;
 }
 .index-foto3{
     width: 540px;
     height: 360px;
-    margin: 0 0 25px 15px;
-    padding: 10px;
+    margin: 0 0 25px 0;
+    padding-left: 10px;
 }
 .index-foto4{
     width: 540px;
     height: 360px;
-    margin: 0 0 25px 15px;
-    padding: 10px;
+    margin: 0 0 25px 0;
+    padding-left: 10px;
 }
 .index-section__about-us{
     animation: index-section__about-us 1s ease-in-out both;
@@ -195,22 +200,25 @@ a:hover{
     margin: 0 0 10px 0;
 }
 .about-us-main{
-    margin: 0 0 50px 25px;
-    padding: 20px;
+    margin: 0 0 50px 0;
+    padding-left: 25px;
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     row-gap: 20px;
 }
 .about-us__ol{
-    margin: 0 0 50px 25px;
+    margin: 0 0 50px 10px;
+    padding-left: 25px;
     list-style-type: lower-roman;
     font-family: var(--fl);
     font-size: 15px;
     color:rgba(9, 193, 55, 0.842);
 }
 .about-us__ul{
-    margin: 0 0 0px 25px;
-    list-style: none;
+    margin: 0 0 50px 0px;
+    padding-left: 20px;
+    list-style: disc;
+    gap: 10px; 
     font-family: var(--fl);
     font-size: 15px;
     color:rgba(9, 193, 55, 0.842);
@@ -272,7 +280,7 @@ a:hover{
     display: flex;
     flex-direction:column;
     flex-wrap:wrap;
-    gap: 20px;
+    gap: 10px;
     font-family: var(--fl);
     font-size: 15px;
     text-align: justify;
@@ -307,7 +315,7 @@ a:hover{
 @media(max-width: 500px){
     p{
         margin: 0 0 50px 0;
-        padding: 10px;
+        padding-left: 10px;
         font-family: var(--fl);
         font-size: 15px;
         text-align:justify;
@@ -382,7 +390,7 @@ a:hover{
         background-color: rgb(5, 156, 5);
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         align-items: center;
         justify-content: space-between;
     }
