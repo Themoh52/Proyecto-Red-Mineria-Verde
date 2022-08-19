@@ -1,0 +1,48 @@
+@keyframes index-section__about-us{
+    0%{
+        transform: scale(0);
+        transform-origin: 50% 0%;
+        opacity: 0.5 
+    }
+    100%{
+        transform: scale(1);
+        transform-origin: 50% 0%;
+        opacity: 1;
+    }
+}
+@keyframes index-section__areas{
+    0%{
+        transform: scale(0);
+        transform-origin: 100% 50%;
+        opacity: 0.5 
+    }
+    100%{
+        transform: scale(1);
+        transform-origin: 100% 50%;
+        opacity: 1;
+    }
+}
+@keyframes index-section__practica{
+    0%{
+        transform: scale(0);
+        transform-origin: 0% 50%;
+        opacity: 0.5 
+    }
+    100%{
+        transform: scale(1);
+        transform-origin: 0% 50%;
+        opacity: 1;
+    }
+}
+@keyframes index-section__work{
+    0%{
+        transform: scale(0);
+        transform-origin: 50% 100%;
+        opacity: 0.5 
+    }
+    100%{
+        transform: scale(1);
+        transform-origin: 50% 100%;
+        opacity: 1;
+    }
+}

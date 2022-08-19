@@ -1,137 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Inika&display=swap');
 
-:root{
-    --fl: 'Inika', serif;
-}
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-h1{
-    font-family: var(--fl);
-    font-size: 25px;
-    margin: 0 0 50px 0;
-    padding-left: 25px;
-    color: rgba(9, 193, 55, 0.842);   
-}
-h2{
-    font-family: var(--fl);
-    font-size: 20px;
-    margin: 0 0 50px 0;
-    padding-left: 25px;
-    color: blue;
-}
-h3{
-    font-family: var(--fl);
-    font-size: 15px;
-    margin: 0 0 50px 0;
-    color: black;
-}
-p{
-    margin: 0 0 50px 0;
-    padding-left: 25px;
-    font-family: var(--fl);
-    font-size: 15px;
-    text-align:justify;
-    color: rgba(9, 193, 55, 0.842);
-}
-a{
-    font-family: var(--fl);
-    font-size: 15px;
-    color: rgb(1, 202, 247);
-    text-decoration: none;
-    margin: 0 0 25px 25px;
-    padding-left: 5px;
-    transition: ease-in-out .5s;
-}
+
+
+
 a:hover{
     padding: 5px;
     margin: 0 0 25px;
     background-color: black;
     color: white;
 }
-.header{
-    background-color: rgb(5, 156, 5);
-    margin: 0 0 50px 0;
-    width: 100vw;
-}
-.header-nav{
-    width: 100vw;
-    height: 30vh;
-    margin: 0 0 50px 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-content: space-between;
-    align-items: center;
-}
-.header-nav__menu{
-    margin: 0;
-    display:flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-around;
-    list-style: none;
-}
-.header-nav__menu__a{
-    font-family: var(--fl);
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    margin: 0 0 50px 0;
-}
-.header-nav__logo{
-    height: 100px;
-    width: 100px;
-    margin: 0;
-}
-.header-nav__logo__a{
-    padding: 5px;
-    background-color: rgba(210, 180, 140, 0);
-}
-.index-main{
-    margin: 0 0 50px 0;
-    display: flex;
-    flex-direction: row;
-    flex-wrap:wrap;
-    gap:20px;
-}
-.index-foto1{
-    width: 540px;
-    height: 354.375px;
-    margin: 0 0 25px 0;
-    padding-left: 10px;
-}
-.index-foto2{
-    width:300px;
-    height: 241.193px;
-    margin: 0 0 25px 25px;
-    padding-left: 10px;
-}
-.index-foto3{
-    width: 540px;
-    height: 360px;
-    margin: 0 0 25px 0;
-    padding-left: 10px;
-}
-.index-foto4{
-    width: 540px;
-    height: 360px;
-    margin: 0 0 25px 0;
-    padding-left: 10px;
-}
-.index-section__about-us{
+
+
+.index-main-section__about-us{
     animation: index-section__about-us 1s ease-in-out both;
 }
-.index-aside__areas{
+.index-main-aside__areas{
     animation: index-aside__areas 2s ease-in-out both;
 }
-.index-section__practica{
+.index-main-section__practica{
     animation: index-section__practica 3s ease-in-out both;
 }
-.index-section__work{
+.index-main-section__work{
     animation: index-section__work 4s ease-in-out both;
 }
 @keyframes index-section__about-us{
@@ -181,23 +71,6 @@ a:hover{
         transform-origin: 50% 100%;
         opacity: 1;
     }
-}
-.footer{
-    width: 100vw;
-    height: 20vh;
-    background-color: rgb(5, 156, 5);
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-around;
-}
-.footer-a{
-    font-family: var(--fl);
-    font-size: 15px;
-    color: white;
-    text-decoration: none;
-    margin: 0 0 10px 0;
 }
 .about-us-main{
     margin: 0 0 50px 0;

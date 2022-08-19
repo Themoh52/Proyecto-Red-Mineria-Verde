@@ -1,0 +1,43 @@
+.index-main{
+    margin: 0 0 50px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap:wrap;
+    gap:20px;
+    &-foto-1{
+        width: 540px;
+        height: 354.375px;
+        margin: 0 0 25px 0;
+        padding-left: 10px;
+    }
+    &-foto-2{
+        width:300px;
+        height: 241.193px;
+        margin: 0 0 25px 25px;
+        padding-left: 10px;
+    }
+    &-foto-3{
+        width: 540px;
+        height: 360px;
+        margin: 0 0 25px 0;
+        padding-left: 10px;
+    }
+    &-foto-4{
+        width: 540px;
+        height: 360px;
+        margin: 0 0 25px 0;
+        padding-left: 10px;
+    }
+    &-section__about-us{
+        animation: index-section__about-us 1s ease-in-out both;
+    }
+    &-aside__areas{
+        animation: index-section__areas 2s ease-in-out both;
+    }
+    &-section__practica{
+        animation: index-section__practica 3s ease-in-out both;
+    }
+    &-section__work{
+        animation: index-section__work 4s ease-in-out both;
+    }
+}

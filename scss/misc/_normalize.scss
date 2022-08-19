@@ -1,0 +1,49 @@
+$parrafo: 'Inika', serif;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: $parrafo;
+    font-size: 25px;
+    margin: 0 0 50px 0;
+    padding-left: 25px;
+    color: rgba(9, 193, 55, 0.842);   
+}
+h2{
+    font-family: $parrafo;
+    font-size: 20px;
+    margin: 0 0 50px 0;
+    padding-left: 25px;
+    color: blue;
+}
+h3{
+    font-family: $parrafo;
+    font-size: 15px;
+    margin: 0 0 50px 0;
+    color: black;
+}
+p{
+    margin: 0 0 50px 0;
+    padding-left: 25px;
+    font-family: $parrafo;
+    font-size: 15px;
+    text-align:justify;
+    color: rgba(9, 193, 55, 0.842);
+}
+a{
+    font-family: $parrafo;
+    font-size: 15px;
+    color: rgb(1, 202, 247);
+    text-decoration: none;
+    margin: 0 0 25px 25px;
+    padding-left: 5px;
+    transition: ease-in-out .5s;
+        &:hover{
+        padding: 5px;
+        margin: 0 0 25px;
+        background-color: black;
+        color: white;
+        }
+}
