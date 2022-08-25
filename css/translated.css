@@ -66,14 +66,14 @@ a {
     font-family: "Inika", serif;
     font-size: 15px; }
 
-.header, .header-nav, .header-nav__menu__a {
+.header, .header-nav {
   background-color: #059c05;
   margin: 0 0 50px 0;
   width: 100vw; }
   .header-nav {
     height: 30vh;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: auto;
     justify-content: space-between;
     align-items: center; }
     .header-nav__logo {
@@ -95,7 +95,8 @@ a {
         font-family: "Inika", serif;
         font-size: 15px;
         color: white;
-        text-decoration: none; }
+        text-decoration: none;
+        margin: 0 0 50px 0; }
 
 .footer {
   width: 100vw;
