@@ -66,7 +66,7 @@ a {
     font-family: "Inika", serif;
     font-size: 15px; }
 
-.header, .header-nav, .header-nav__logo, .header-nav__menu {
+.header, .header-nav, .header-nav__menu__a {
   background-color: #059c05;
   margin: 0 0 50px 0;
   width: 100vw; }
@@ -77,12 +77,14 @@ a {
     justify-content: space-between;
     align-items: center; }
     .header-nav__logo {
+      height: 100px;
       width: 100px;
-      height: 100px; }
+      margin: 0; }
     .header-nav__a {
       padding: 5px;
       background-color: rgba(210, 180, 140, 0); }
     .header-nav__menu {
+      margin: 0;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -93,8 +95,7 @@ a {
         font-family: "Inika", serif;
         font-size: 15px;
         color: white;
-        text-decoration: none;
-        margin: 0 0 50px 0; }
+        text-decoration: none; }
 
 .footer {
   width: 100vw;

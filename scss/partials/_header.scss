@@ -1,5 +1,4 @@
 $parrafo: 'Inika', serif;
-@import "../misc/mixins";
 
 .header{
     background-color: rgb(5, 156, 5);
@@ -8,21 +7,21 @@ $parrafo: 'Inika', serif;
     &-nav{
         @extend .header;
         height: 30vh;
-        @extend .header;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: space-between;
         align-items: center;
         &__logo{
-            @include size(100px,100px);
-            @extend .header;
+            height: 100px;
+            width: 100px;
+            margin: 0;
         }
             &__a{
                 padding: 5px;
                 background-color: rgba(210, 180, 140, 0);
             }
     &__menu{
-        @extend .header;
+        margin: 0;
         display:flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -30,11 +29,11 @@ $parrafo: 'Inika', serif;
         justify-content: space-around;
         list-style: none;
         &__a{
+            @extend .header;
             font-family: $parrafo;
             font-size: 15px;
             color: white;
             text-decoration: none;
-            margin: 0 0 50px 0;
         }
         }
     }
