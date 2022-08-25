@@ -46,27 +46,43 @@ a {
     background-color: black;
     color: white; }
 
-.header {
+.form {
+  width: 20vw;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-family: var(--fl);
+  font-size: 15px;
+  text-align: justify;
+  color: rgba(9, 193, 55, 0.842); }
+  .form-btn-enviar {
+    background-color: rgba(9, 193, 55, 0.842);
+    font-family: "Inika", serif;
+    font-size: 15px; }
+  .form-btn-borrar {
+    background-color: #da8d09;
+    font-family: "Inika", serif;
+    font-size: 15px; }
+
+.header, .header-nav, .header-nav__logo, .header-nav__menu {
   background-color: #059c05;
   margin: 0 0 50px 0;
   width: 100vw; }
   .header-nav {
-    width: 100vw;
     height: 30vh;
-    margin: 0 0 50px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     align-items: center; }
     .header-nav__logo {
-      height: 100px;
       width: 100px;
-      margin: 0; }
+      height: 100px; }
     .header-nav__a {
       padding: 5px;
       background-color: rgba(210, 180, 140, 0); }
     .header-nav__menu {
-      margin: 0;
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
@@ -105,7 +121,7 @@ a {
   .index-main-foto-1 {
     width: 540px;
     height: 354.375px;
-    margin: 0 0 25px 0;
+    margin: 0 0 25px 25px;
     padding-left: 10px; }
   .index-main-foto-2 {
     width: 300px;
@@ -120,7 +136,7 @@ a {
   .index-main-foto-4 {
     width: 540px;
     height: 360px;
-    margin: 0 0 25px 0;
+    margin: 0 0 25px 25px;
     padding-left: 10px; }
   .index-main-section__about-us {
     animation: index-section__about-us 1s ease-in-out both; }
@@ -171,10 +187,81 @@ a {
     transform-origin: 50% 100%;
     opacity: 1; } }
 
+@keyframes areas-main__tabla {
+  0% {
+    transform: scale(0);
+    opacity: 0.5; }
+  100% {
+    transform: scale(1);
+    opacity: 1; } }
+
+.about-us-main {
+  margin: 0 0 50px 0;
+  padding-left: 25px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 20px; }
+
+.about-us__ol {
+  margin: 0 0 50px 10px;
+  padding-left: 25px;
+  list-style-type: lower-roman;
+  font-family: var(--fl);
+  font-size: 15px;
+  color: rgba(9, 193, 55, 0.842); }
+
+.about-us__ul {
+  margin: 0 0 50px 0px;
+  padding-left: 20px;
+  list-style: disc;
+  gap: 10px;
+  font-family: var(--fl);
+  font-size: 15px;
+  color: rgba(9, 193, 55, 0.842); }
+
+.areas-main {
+  margin: 0 0 50px 0;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+  .areas-main__tabla {
+    margin: 0 0 50px 25px;
+    padding: 20px;
+    width: 95vw;
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 2fr 2fr;
+    row-gap: 25px;
+    column-gap: 25px;
+    border: solid 1px black;
+    border-style: double;
+    animation: areas-main__tabla 1s ease-in-out both; }
+
+.practica-main {
+  margin: 0 0 50px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+  .practica-main-ul {
+    margin: 0 0 50px 25px;
+    list-style: square;
+    font-family: var(--fl);
+    font-size: 15px;
+    text-align: justify;
+    color: rgba(9, 193, 55, 0.842); }
+
+.work-main {
+  margin: 0 0 50px 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap; }
+
 @media (max-width: 1100px) {
   p {
     margin: 0 0 50px 0;
-    font-family: var(--fl);
+    font-family: "Inika", serif;
     font-size: 15px;
     text-align: justify;
     color: rgba(9, 193, 55, 0.842); }
@@ -197,12 +284,12 @@ a {
   p {
     margin: 0 0 50px 0;
     padding-left: 10px;
-    font-family: var(--fl);
+    font-family: "Inika", serif;
     font-size: 15px;
     text-align: justify;
     color: rgba(9, 193, 55, 0.842); }
   a {
-    font-family: var(--fl);
+    font-family: "Inika", serif;
     font-size: 15px;
     color: #01caf7;
     text-decoration: none;
@@ -234,22 +321,22 @@ a {
     flex-direction: row;
     flex-wrap: wrap;
     gap: 20px; }
-    .index-main-foto1 {
+    .index-main-foto-1 {
       width: 320px;
       height: 223px;
       margin: 0 0 25px 0;
       padding: 10px; }
-    .index-main-foto2 {
+    .index-main-foto-2 {
       width: 300px;
       height: 241.193px;
       margin: 0 0 25px 0;
       padding: 10px; }
-    .index-main-foto3 {
+    .index-main-foto-3 {
       width: 320px;
       height: 226px;
       margin: 0 0 25px 0;
       padding: 10px; }
-    .index-main-foto4 {
+    .index-main-foto-4 {
       width: 320px;
       height: 226px;
       margin: 0 0 25px 0;

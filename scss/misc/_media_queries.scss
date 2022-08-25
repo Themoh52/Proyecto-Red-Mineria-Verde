@@ -1,7 +1,8 @@
+$parrafo: 'Inika', serif;
 @media (max-width: 1100px){
     p{
         margin: 0 0 50px 0;
-        font-family: var(--fl);
+        font-family: $parrafo;
         font-size: 15px;
         text-align:justify;
         color: rgba(9, 193, 55, 0.842);
@@ -27,13 +28,13 @@
     p{
         margin: 0 0 50px 0;
         padding-left: 10px;
-        font-family: var(--fl);
+        font-family: $parrafo;
         font-size: 15px;
         text-align:justify;
         color: rgba(9, 193, 55, 0.842);
     }
     a{
-        font-family: var(--fl);
+        font-family: $parrafo;
         font-size: 15px;
         color: rgb(1, 202, 247);
         text-decoration: none;
@@ -69,25 +70,25 @@
         flex-direction:row;
         flex-wrap:wrap;
         gap:20px;
-            &-foto1{
+            &-foto-1{
             width: 320px;
             height: 223px;
             margin: 0 0 25px 0;
             padding: 10px;
             }
-            &-foto2{
+            &-foto-2{
             width:300px;
             height: 241.193px;
             margin: 0 0 25px 0;
             padding: 10px;
             }
-            &-foto3{
+            &-foto-3{
             width: 320px;
             height: 226px;
             margin: 0 0 25px 0;
             padding: 10px;
             }
-            &-foto4{
+            &-foto-4{
             width: 320px;
             height: 226px;
             margin: 0 0 25px 0;

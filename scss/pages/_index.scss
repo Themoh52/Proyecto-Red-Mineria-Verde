@@ -1,3 +1,4 @@
+@import "../misc/mixins";
 .index-main{
     margin: 0 0 50px 0;
     display: flex;
@@ -5,27 +6,23 @@
     flex-wrap:wrap;
     gap:20px;
     &-foto-1{
-        width: 540px;
-        height: 354.375px;
-        margin: 0 0 25px 0;
+        @include size(540px,354.375px);
+        margin: 0 0 25px 25px;
         padding-left: 10px;
     }
     &-foto-2{
-        width:300px;
-        height: 241.193px;
+        @include size(300px,241.193px);
         margin: 0 0 25px 25px;
         padding-left: 10px;
     }
     &-foto-3{
-        width: 540px;
-        height: 360px;
+        @include size(540px,360px);
         margin: 0 0 25px 0;
         padding-left: 10px;
     }
     &-foto-4{
-        width: 540px;
-        height: 360px;
-        margin: 0 0 25px 0;
+        @include size(540px,360px);
+        margin: 0 0 25px 25px;
         padding-left: 10px;
     }
     &-section__about-us{
