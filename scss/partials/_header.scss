@@ -1,7 +1,7 @@
 $parrafo: 'Inika', serif;
 
 .header{
-    background-color: rgb(5, 156, 5);
+    background-color: #2bb224;
     margin: 0 0 50px 0;
     width: 100vw;
     &-nav{
@@ -31,7 +31,7 @@ $parrafo: 'Inika', serif;
         &__a{
             font-family: $parrafo;
             font-size: 15px;
-            color: white;
+            color: #f0f9ff;
             text-decoration: none;
             margin: 0 0 50px 0;
         }

@@ -12,8 +12,9 @@
         grid-template-rows: 2fr 2fr;
         row-gap: 25px;
         column-gap: 25px;
-        border: solid 1px black;
-        border-style: double;
+        border: solid 3px rgb(255, 255, 255);
+        border-style: solid;
+        border-radius: 5px;
         animation: areas-main__tabla 1s ease-in-out both;
     }
 }

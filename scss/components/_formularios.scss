@@ -1,7 +1,7 @@
 $parrafo: 'Inika', serif;
 $botones: (
-    enviar: rgba(9, 193, 55, 0.842),
-    borrar: rgb(218, 141, 9),
+    enviar: #4bda34,
+    borrar: #d38327,
     texto: $parrafo,
     ttexto: 15px,
 );
@@ -15,7 +15,7 @@ $botones: (
     font-family: var(--fl);
     font-size: 15px;
     text-align: justify;
-    color:rgba(9, 193, 55, 0.842);
+    color:#a9ff1f;
     &-btn-enviar{
         background-color: map-get($botones, enviar);
         font-family: map-get($botones, texto);
