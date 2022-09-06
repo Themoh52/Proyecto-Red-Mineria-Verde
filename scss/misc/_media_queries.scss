@@ -25,9 +25,41 @@ $parrafo: 'Inika', serif;
     }
 }
 @media(max-width: 500px){
+    h1{
+        font-family: $parrafo;
+        font-size: 25px;
+        margin: 0 0 50px 0;
+        padding: 0;
+        color: #f0f9ff;
+        background-color: black;   
+    }
+    h2{
+        font-family: $parrafo;
+        font-size: 20px;
+        margin: 0 0 50px 0;
+        padding: 0;
+        color: #ffb133;
+        background-color: black;
+    }
+    h3{
+        font-family: $parrafo;
+        font-size: 15px;
+        margin: 0 0 50px 0;
+        color: #a9ff1f;
+        background-color: black;
+    }
     p{
         margin: 0 0 50px 0;
-        padding-left: 10px;
+        padding: 0;
+        font-family: $parrafo;
+        font-size: 15px;
+        text-align:justify;
+        color: #00ff55;
+        background-color: black;
+    }
+    p{
+        margin: 0 0 50px 0;
+        padding: 0;
         font-family: $parrafo;
         font-size: 15px;
         text-align:justify;
@@ -45,6 +77,14 @@ $parrafo: 'Inika', serif;
                 color: white;
             }
     }
+    li{
+        margin: 0 0 25px 0;
+        padding-left: 10px;
+        font-family: $parrafo;
+        font-size: 15px;
+        text-align:justify;
+        color: #00ff91; 
+    }
     .header-nav{
         width: 100vw;
         height: 30vh;
@@ -54,6 +94,7 @@ $parrafo: 'Inika', serif;
         flex-wrap: wrap;
         justify-content:center;
         align-items: center;
+        row-gap: 5px;
             &__menu{
                 display: flex;
                 flex-wrap: wrap;
@@ -61,7 +102,16 @@ $parrafo: 'Inika', serif;
                 align-items: center;
                 justify-content: center;
                 list-style: none;
+                &__a{
+                    font-family: $parrafo;
+                    font-size: 15px;
+                    color: #f0f9ff;
+                    background-color: #2bb224;
+                    text-decoration: none;
+                    margin: 0 0 50px 0;
+                }
             }
+
     }
     .index-main{
         margin: 0 0 50px 0;
@@ -165,7 +215,15 @@ $parrafo: 'Inika', serif;
         flex-wrap: wrap;
         align-items: center;
         justify-content: space-around;
+        &-a{
+            font-family: $parrafo;
+            font-size: 15px;
+            color: white;
+            text-decoration: none;
+            margin: 0 0 10px 0;
+        }
     }
+
     .areas-main__tabla{
         margin: 0 0 50px 10px;
         padding: 20px;
