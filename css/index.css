@@ -7,34 +7,47 @@
 h1 {
   font-family: "Inika", serif;
   font-size: 40px;
-  margin: 0 0 50px 0;
+  margin: 0 0 50px 25px;
   padding: 0;
   color: #f0f9ff;
-  background-color: black; }
+  background-color: black;
+  border: 1px black;
+  border-radius: 5px;
+  border-style: double; }
 
 h2 {
   font-family: "Inika", serif;
   font-size: 30px;
-  margin: 0 0 50px 0;
+  margin: 0 0 50px 25px;
   padding: 0;
   color: #ffb133;
-  background-color: black; }
+  background-color: black;
+  border: 1px black;
+  border-radius: 5px;
+  border-style: double; }
 
 h3 {
   font-family: "Inika", serif;
   font-size: 20px;
-  margin: 0 0 50px 0;
+  margin: 0 0 50px 25px;
+  padding: 0;
   color: #a9ff1f;
-  background-color: black; }
+  background-color: black;
+  border: 1px black;
+  border-radius: 5px;
+  border-style: double; }
 
 p {
-  margin: 0 0 50px 0;
+  margin: 0 0 50px 25px;
   padding: 0;
   font-family: "Inika", serif;
   font-size: 35px;
   text-align: justify;
   color: #00ff55;
-  background-color: black; }
+  background-color: black;
+  border: 1px black;
+  border-radius: 5px;
+  border-style: double; }
 
 a {
   font-family: "Inika", serif;
@@ -164,38 +177,43 @@ li {
 
 .index-main {
   margin: 0 0 50px 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-areas: "index-main-section__about-us index-main-section__areas" " index-main-section__practica index-main-section__work";
+  grid-template-rows: repeat(2, 2fr);
+  grid-template-columns: repeat(2, 2fr);
   gap: 20px; }
+  .index-main-section__about-us {
+    grid-area: index-main-section__about-us;
+    animation: index-section__about-us 1s ease-in-out both; }
+  .index-main-section__areas {
+    grid-area: index-main-section__areas;
+    animation: index-section__areas 2s ease-in-out both; }
+  .index-main-section__practica {
+    grid-area: index-main-section__practica;
+    animation: index-section__practica 3s ease-in-out both; }
+  .index-main-section__work {
+    grid-area: index-main-section__work;
+    animation: index-section__work 4s ease-in-out both; }
   .index-main-foto-1 {
     width: 540px;
     height: 354.375px;
     margin: 0 0 25px 25px;
-    padding-left: 10px; }
+    padding: 0; }
   .index-main-foto-2 {
     width: 300px;
     height: 241.193px;
     margin: 0 0 25px 25px;
-    padding-left: 10px; }
+    padding: 0; }
   .index-main-foto-3 {
     width: 540px;
     height: 360px;
-    margin: 0 0 25px 0;
-    padding-left: 10px; }
+    margin: 0 0 25px 25px;
+    padding: 0; }
   .index-main-foto-4 {
     width: 540px;
     height: 360px;
     margin: 0 0 25px 25px;
-    padding-left: 10px; }
-  .index-main-section__about-us {
-    animation: index-section__about-us 1s ease-in-out both; }
-  .index-main-aside__areas {
-    animation: index-section__areas 2s ease-in-out both; }
-  .index-main-section__practica {
-    animation: index-section__practica 3s ease-in-out both; }
-  .index-main-section__work {
-    animation: index-section__work 4s ease-in-out both; }
+    padding: 0; }
 
 @keyframes index-section__about-us {
   0% {
@@ -250,7 +268,7 @@ li {
   padding-left: 25px;
   display: grid;
   grid-template-rows: repeat(3, 1fr);
-  row-gap: 20px; }
+  row-gap: 15px; }
 
 .about-us__ol {
   margin: 0 0 50px 10px;
@@ -309,11 +327,11 @@ li {
   flex-direction: column;
   flex-wrap: wrap; }
 
-@media (max-width: 1100px) {
+@media (max-width: 1024px) {
   p {
     margin: 0 0 50px 0;
     font-family: "Inika", serif;
-    font-size: 15px;
+    font-size: 35px;
     text-align: justify;
     color: #00ff55; }
   .header-nav {
@@ -324,10 +342,10 @@ li {
     justify-content: space-between;
     align-items: center; }
   .main-index {
-    margin: 0 0 50px 0;
-    padding: 20px;
+    margin: 0 0 50px 25px;
+    padding: 0;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     gap: 10px; } }
 
@@ -335,21 +353,21 @@ li {
   h1 {
     font-family: "Inika", serif;
     font-size: 25px;
-    margin: 0 0 50px 0;
+    margin: 0 0 50px 10px;
     padding: 0;
     color: #f0f9ff;
     background-color: black; }
   h2 {
     font-family: "Inika", serif;
     font-size: 20px;
-    margin: 0 0 50px 0;
+    margin: 0 0 50px 10px;
     padding: 0;
     color: #ffb133;
     background-color: black; }
   h3 {
     font-family: "Inika", serif;
     font-size: 15px;
-    margin: 0 0 50px 0;
+    margin: 0 0 50px 10px;
     color: #a9ff1f;
     background-color: black; }
   p {
@@ -360,13 +378,6 @@ li {
     text-align: justify;
     color: #00ff55;
     background-color: black; }
-  p {
-    margin: 0 0 50px 0;
-    padding: 0;
-    font-family: "Inika", serif;
-    font-size: 15px;
-    text-align: justify;
-    color: #00ff55; }
   a {
     font-family: "Inika", serif;
     font-size: 15px;
