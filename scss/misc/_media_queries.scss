@@ -26,6 +26,7 @@ $parrafo: 'Inika', serif;
 }
 @media(max-width: 500px){
     h1{
+        width: 50vw;
         font-family: $parrafo;
         font-size: 25px;
         margin: 0 0 50px 10px;
@@ -34,9 +35,10 @@ $parrafo: 'Inika', serif;
         background-color: black;   
     }
     h2{
+        width: 50vw;
         font-family: $parrafo;
         font-size: 20px;
-        margin: 0 0 50px 10px;
+        margin: 0 0 50px 0;
         padding: 0;
         color: #ffb133;
         background-color: black;
@@ -44,7 +46,7 @@ $parrafo: 'Inika', serif;
     h3{
         font-family: $parrafo;
         font-size: 15px;
-        margin: 0 0 50px 10px;
+        margin: 0 0 50px 0;
         color: #a9ff1f;
         background-color: black;
     }
@@ -229,4 +231,40 @@ $parrafo: 'Inika', serif;
         border-radius: 5px;
         border-spacing: 25px;
     }
+    $formulario:(
+    color:#a9ff1f,
+    texto: $parrafo,
+    ttexto: 15px,
+    fondo: black,
+    );
+
+    $botones: (
+        enviar: #4bda34,
+        borrar: #d38327,
+        texto: $parrafo,
+        ttexto: 15px,
+    );
+    .form{
+        width: 75vw;
+        padding: 0;
+        display: flex;
+        flex-direction:column;
+        flex-wrap:wrap;
+        gap: 10px;
+        font-family: map-get($formulario, texto);
+        font-size: map-get($formulario, ttexto);
+        text-align: justify;
+        color: map-get($formulario, color);
+        background-color: map-get($formulario, fondo);
+        &-btn-enviar{
+            background-color: map-get($botones, enviar);
+            font-family: map-get($botones, texto);
+            font-size: map-get($botones, ttexto);
+        }
+        &-btn-borrar{
+            background-color: map-get($botones, borrar);
+            font-family: map-get($botones, texto);
+            font-size: map-get($botones, ttexto);
+        }
+}
 }

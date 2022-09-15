@@ -5,6 +5,7 @@ $parrafo: 'Inika', serif;
     box-sizing: border-box;
 }
 h1{
+    width: 35vw;
     font-family: $parrafo;
     font-size: 40px;
     margin: 0 0 50px 25px;
@@ -16,8 +17,9 @@ h1{
     border-style: double;   
 }
 h2{
+    width: 25vw;
     font-family: $parrafo;
-    font-size: 30px;
+    font-size: 35px;
     margin: 0 0 50px 25px;
     padding: 0;
     color: #ffb133;
@@ -41,7 +43,7 @@ p{
     margin: 0 0 50px 25px;
     padding: 0;
     font-family: $parrafo;
-    font-size: 35px;
+    font-size: 30px;
     text-align:justify;
     color: #00ff55;
     background-color: black;
@@ -61,6 +63,7 @@ a{
         padding: 5px;
         margin: 0 0 25px 0;
         background-color: black;
+        border-radius: 5px;
         color: white;
         }
 }
@@ -68,7 +71,7 @@ li{
     margin: 0 0 25px 0;
     padding-left: 10px;
     font-family: $parrafo;
-    font-size: 35px;
+    font-size: 30px;
     text-align:justify;
     color: #00ff91; 
 }
